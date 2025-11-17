@@ -1,0 +1,44 @@
+{
+  "page": {
+    "companyRegistration": "تسجيل الشركة"
+  },
+  "section": {
+    "companyDetails": "تفاصيل الشركة",
+    "occiDetails": "تفاصيل غرفة التجارة",
+    "smeRiyadaDetails": "تفاصيل المؤسسات الصغيرة وريادة"
+  },
+  "fields": {
+    "companyName": "اسم الشركة",
+    "crNumber": "رقم السجل التجاري",
+    "occiNumber": "رقم غرفة التجارة",
+    "occiExpiryDate": "تاريخ انتهاء غرفة التجارة",
+    "yearsToRenew": "عدد سنوات التجديد",
+    "degree": "الدرجة",
+    "isSme": "هل الشركة من المؤسسات الصغيرة؟",
+    "smeType": "نوع المؤسسة الصغيرة",
+    "isRiyadaRegistered": "هل الشركة مسجلة في ريادة؟",
+    "riydaCardExpiry": "تاريخ انتهاء بطاقة ريادة"
+  },
+  "select": {
+    "oneYear": "سنة واحدة",
+    "twoYears": "سنتان"
+  },
+  "buttons": {
+    "next": "التالي",
+    "back": "السابق",
+    "submit": "إرسال"
+  },
+  "messages": {
+    "fetchFailed": "فشل في جلب بيانات الشركة!"
+  },
+  "step": {
+    "companyDetails": "تفاصيل الشركة",
+    "otherDetails": "تفاصيل أخرى",
+    "paymentDetails": "تفاصيل الدفع",
+    "summary": "الملخص"
+  },
+  "common": {
+    "yes": "نعم",
+    "no": "لا"
+  }
+}

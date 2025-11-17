@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Material-UI RTL Fixes */
+[dir="rtl"] .MuiGrid-container {
+  direction: rtl;
+}
+
+[dir="rtl"] .MuiTextField-root {
+  direction: rtl;
+}
+
+[dir="rtl"] .MuiInputBase-root {
+  direction: rtl;
+}
+
+[dir="rtl"] .MuiInputLabel-root {
+  right: 14px !important;
+  left: auto !important;
+  transform-origin: top right !important;
+}
+
+[dir="rtl"] .MuiInputLabel-shrink {
+  transform: translate(0, -9px) scale(0.75) !important;
+  transform-origin: top right !important;
+  right: 10px !important;
+}
+
+[dir="rtl"] .MuiInputLabel-outlined {
+  transform: translate(-14px, 16px) scale(1) !important;
+}
+
+[dir="rtl"] .MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(-14px, -9px) scale(0.75) !important;
+}
+
+[dir="rtl"] .MuiOutlinedInput-notchedOutline legend {
+  text-align: right;
+}
+
+[dir="rtl"] .MuiSelect-icon {
+  left: 7px;
+  right: auto;
+}
+
+[dir="rtl"] .MuiMenuItem-root {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Date Picker RTL */
+[dir="rtl"] .MuiPickersDay-root {
+  direction: rtl;
+}
+
+/* Stepper RTL */
+[dir="rtl"] .MuiStepper-root {
+  direction: rtl;
+}
+
+[dir="rtl"] .MuiStepLabel-labelContainer {
+  text-align: right;
+}
+
+/* Card Content RTL */
+[dir="rtl"] .MuiCardContent-root {
+  direction: rtl;
+}
+
+/* Typography RTL */
+[dir="rtl"] .MuiTypography-root {
+  text-align: right;
+}
+
+/* Button RTL */
+[dir="rtl"] .MuiButton-startIcon {
+  margin-left: 8px;
+  margin-right: -4px;
+}
+
+/* Box RTL */
+[dir="rtl"] .MuiBox-root {
+  direction: rtl;
 }

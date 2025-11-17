@@ -1,0 +1,44 @@
+{
+  "page": {
+    "companyRegistration": "Company Registration"
+  },
+  "section": {
+    "companyDetails": "Company Details",
+    "occiDetails": "OCCI Details",
+    "smeRiyadaDetails": "SME & Riyada Details"
+  },
+  "fields": {
+    "companyName": "Company Name",
+    "crNumber": "CR Number",
+    "occiNumber": "OCCI Number",
+    "occiExpiryDate": "OCCI Expiry Date",
+    "yearsToRenew": "Years To Renew",
+    "degree": "Degree",
+    "isSme": "Is SME Company?",
+    "smeType": "SME Type",
+    "isRiyadaRegistered": "Is Riyada Registered?",
+    "riydaCardExpiry": "Riyada Card Expiry"
+  },
+  "select": {
+    "oneYear": "1 Year",
+    "twoYears": "2 Years"
+  },
+  "buttons": {
+    "next": "Next",
+    "back": "Back",
+    "submit": "Submit"
+  },
+  "messages": {
+    "fetchFailed": "Failed to fetch company details!"
+  },
+  "step": {
+    "companyDetails": "Company Details",
+    "otherDetails": "Other Details",
+    "paymentDetails": "Payment Details",
+    "summary": "Summary"
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "No"
+  }
+}

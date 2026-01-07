@@ -1,29 +1,32 @@
 {
   "page": {
     "companyRegistration": "تسجيل الشركة",
-    "contractDetails": "تفاصيل العقد",
+    "contractDetails": "تفاصيل أخرى",
     "paymentDetails": "تفاصيل الدفع"
   },
   "section": {
     "companyDetails": "تفاصيل الشركة",
     "occiDetails": "تفاصيل غرفة التجارة",
     "smeRiyadaDetails": "تفاصيل المؤسسات الصغيرة وريادة",
-    "contractInformation": "معلومات العقد",
+    "contractInformation": "معلومات أخرى",
     "contactInformation": "معلومات الاتصال",
-    "paymentInformation": "معلومات الدفع"
+    "paymentInformation": "معلومات الدفع",
+    "otherInformation": "معلومات أخرى",
+    "bankDetails": "تفاصيل البنك / الدفع",
+    "srInformation": "معلومات طلب الخدمة"
   },
   "fields": {
     "companyName": "اسم الشركة",
     "crNumber": "رقم السجل التجاري",
     "occiNumber": "رقم غرفة التجارة",
     "occiExpiryDate": "تاريخ انتهاء غرفة التجارة",
+    "occiIssueDate": "تاريخ إصدار غرفة التجارة",
     "yearsToRenew": "عدد سنوات التجديد",
     "degree": "الدرجة",
     "isSme": "هل الشركة من المؤسسات الصغيرة؟",
     "smeType": "نوع المؤسسة الصغيرة",
     "isRiyadaRegistered": "هل الشركة مسجلة في ريادة؟",
     "riydaCardExpiry": "تاريخ انتهاء بطاقة ريادة",
-
     "rentContractNumber": "رقم عقد الإيجار",
     "licenseNumber": "رقم الترخيص",
     "taxRegistrationNumber": "رقم التسجيل الضريبي",
@@ -32,53 +35,134 @@
     "postalCode": "الرمز البريدي",
     "phone": "الهاتف",
     "fax": "الفاكس",
-
     "mobile": "رقم الهاتف المحمول",
     "email": "البريد الإلكتروني",
     "bankName": "اسم البنك",
     "accountNumber": "رقم الحساب",
     "fees": "الرسوم",
-    "selectBank": "اختر اسم البنك"
-
+    "selectBank": "اختر اسم البنك",
+    "srNumber": "رقم الطلب",
+    "srType": "نوع الطلب",
+    "srStatus": "حالة الطلب",
+    "lastUpdateDate": "تاريخ آخر تحديث",
+    "customerName": "اسم العميل"
   },
   "select": {
     "oneYear": "سنة واحدة",
     "twoYears": "سنتان"
   },
   "buttons": {
+    "validate": "تحقق",
+    "validated": "تم التحقق",
+    "reset": "إعادة تعيين",
     "next": "التالي",
     "back": "السابق",
     "submit": "إرسال",
     "na": "غير متوفر",
-    "proceedToPay": "إنشاء طلب خدمة"
-
-
-
+    "proceedToPay": "إنشاء طلب خدمة",
+    "receipt": "عرض الإيصال",
+    "report": "عرض التقرير",
+    "payment": "متابعة الدفع",
+    "home": "الرئيسية",
+    "viewSR": "عرض الطلب",
+    "download": "تحميل",
+    "print": "طباعة",
+    "close": "إغلاق",
+    "refresh": "تحديث",
+    "verify": "تحقق"
   },
   "messages": {
-    "fetchFailed": "فشل في جلب بيانات الشركة!"
+    "fetchFailed": "فشل في جلب بيانات الشركة!",
+    "autoFilled": "تم تعبئة بيانات الشركة تلقائياً من السجل الموجود",
+    "crNotFoundManual": "رقم السجل التجاري غير موجود. يرجى تعبئة البيانات الإلزامية يدوياً.",
+    "paymentSuccess": "تم الدفع بنجاح",
+    "transactionVerified": "تم التحقق من المعاملة",
+    "transactionDetails": "تفاصيل المعاملة",
+    "officialReceipt": "إيصال رسمي – بلدية مسقط",
+    "amount": "المبلغ",
+    "paid": "مدفوع",
+    "pending": "قيد الانتظار",
+    "srExistsCompleted": "طلب الخدمة موجود مسبقاً ومكتمل.",
+    "srExistsPending": "طلب الخدمة موجود مسبقاً ولكن الدفع معلق.",
+    "srCreatedPaymentRequired": "تم إنشاء طلب الخدمة بنجاح. الدفع مطلوب.",
+    "confirmationMessage": "ستتلقى رسالة تأكيد خلال ١٠ دقائق كحد أقصى من التسجيل"
   },
   "step": {
     "companyDetails": "تفاصيل الشركة",
+    "otherDetails": "تفاصيل أخرى",
     "contractDetails": "تفاصيل العقد",
-    "paymentDetails": "تفاصيل الدفع",
-    "summary": "الملخص",
-    "finish": "إنهاء",
+    "summary": "ملخص",
+    "srDetails": "تفاصيل الطلب",
     "registrationProgress": "تقدم التسجيل",
     "currentStep": "الخطوة الحالية"
   },
   "common": {
     "yes": "نعم",
-    "no": "لا"
+    "no": "لا",
+    "loading": "جاري التحميل..."
   },
   "header": {
     "heading": "بلدية مســــقط"
   },
   "footer": {
-    "copyright": "© ٢٠٢٥ بلدية مسقط. جميع الحقوق محفوظة. يحظر الاستخدام أو النسخ غير المصرح به."
+    "copyright": "© ٢٠٢٦ بلدية مسقط. جميع الحقوق محفوظة. يحظر الاستخدام أو النسخ غير المصرح به."
   },
   "validation": {
-    "fieldRequired": "هذا الحقل مطلوب",
-    "fillAllRequired": "يرجى ملء جميع الحقول المطلوبة قبل المتابعة."
+    "fieldRequired": "هذا الحقل مطلوب.",
+    "fillAllRequired": "يرجى تعبئة جميع الحقول المطلوبة قبل المتابعة.",
+    "correctHighlightedFields": "يرجى تصحيح الحقول المظللة قبل المتابعة.",
+    "invalidEmail": "صيغة البريد الإلكتروني غير صحيحة.",
+    "phone8Digits": "يجب أن يتكون من ٨ أرقام.",
+    "account16Digits": "رقم الحساب يجب أن يكون مكونًا من ١٦ رقمًا.",
+    "numericOnly": "يسمح بالأرقام فقط.",
+    "max16Digits": "الحد الأقصى ١٦ رقمًا.",
+    "max5Digits": "الحد الأقصى ٥ أرقام.",
+    "pleaseValidateFirst": "يرجى إدخال رقم السجل التجاري، رقم غرفة التجارة، وتاريخ الانتهاء بشكل صحيح قبل المتابعة.",
+    "invalidCrNumber": "رقم السجل التجاري غير صحيح.",
+    "invalidOcciNumber": "رقم غرفة التجارة غير صحيح.",
+    "invalidOcciExpiry": "تاريخ انتهاء غرفة التجارة غير صالح أو منتهي الصلاحية.",
+    "apiError": "تعذر التحقق من بيانات السجل التجاري وغرفة التجارة حالياً. يرجى المحاولة لاحقاً.",
+    "validationSuccess": "تم التحقق من بيانات السجل التجاري وغرفة التجارة بنجاح.",
+    "clickToValidate": "اضغط للتحقق من البيانات",
+    "validating": "جارٍ التحقق...",
+    "existingSRFound": "يوجد طلب خدمة نشط لهذا السجل التجاري. اضغط 'عرض الطلب' للاطلاع على التفاصيل."
+  },
+  "captcha": {
+    "title": "التحقق الأمني",
+    "subtitle": "يرجى التحقق من أنك إنسان للمتابعة",
+    "enterText": "أدخل النص المعروض أدناه",
+    "typeCharacters": "اكتب الأحرف التي تراها:",
+    "refresh": "تحديث",
+    "verify": "تحقق",
+    "verified": "تم التحقق",
+    "placeholder": "اكتب رمز الكابتشا",
+    "clickToRefresh": "انقر للتحديث",
+    "secureMessage": "معلوماتك محمية بمعايير أمان عالية",
+    "success": "تم التحقق بنجاح",
+    "error": "رمز الكابتشا غير صحيح. حاول مرة أخرى."
+  },
+  "loading": {
+    "title": "جارٍ التحقق وإنشاء الطلب...",
+    "creatingRequest": "جارٍ التحقق من البيانات",
+    "checkingSR": "جارٍ فحص السجلات",
+    "finalizing": "جارٍ إنهاء الطلب",
+    "processing": "جارٍ معالجة الطلب",
+    "pleaseWait": "يرجى الانتظار..."
+  },
+  "announcement": {
+    "baladiyetiMessage": "** يمكن تنفيذ هذه الخدمة من خلال تطبيق بلديتي **",
+    "confirmationMessage": "* ستتلقى رسالة تأكيد خلال ١٠ دقائق كحد أقصى من التسجيل"
+  },
+  "crNotFound": "رقم السجل التجاري غير موجود. يرجى تعبئة جميع البيانات الإلزامية.",
+  "receipt": {
+    "srNumber": "رقم الطلب",
+    "invoiceNumber": "رقم الفاتورة",
+    "receiptNumber": "رقم الإيصال",
+    "receiptDate": "تاريخ الإيصال",
+    "serviceType": "نوع الخدمة",
+    "customerName": "اسم العميل",
+    "crNumber": "رقم السجل التجاري",
+    "amount": "المبلغ",
+    "generated": "تم الإنشاء"
   }
 }

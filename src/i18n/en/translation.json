@@ -1,29 +1,32 @@
 {
   "page": {
     "companyRegistration": "Company Registration",
-    "contractDetails": "Contract Details",
+    "contractDetails": "Other Details",
     "paymentDetails": "Payment Details"
   },
   "section": {
     "companyDetails": "Company Details",
     "occiDetails": "OCCI Details",
     "smeRiyadaDetails": "SME & Riyada Details",
-    "contractInformation": "Contract Information",
+    "contractInformation": "Other Information",
     "contactInformation": "Contact Information",
-    "paymentInformation": "Payment Information"
+    "paymentInformation": "Payment Information",
+    "otherInformation": "Other Information",
+    "bankDetails": "Bank / Payment Details",
+    "srInformation": "Service Request Information"
   },
   "fields": {
     "companyName": "Company Name",
     "crNumber": "CR Number",
     "occiNumber": "OCCI Number",
     "occiExpiryDate": "OCCI Expiry Date",
+    "occiIssueDate": "OCCI Issue Date",
     "yearsToRenew": "Years To Renew",
     "degree": "Degree",
     "isSme": "Is SME Company?",
     "smeType": "SME Type",
     "isRiyadaRegistered": "Is Riyada Registered?",
     "riydaCardExpiry": "Riyada Card Expiry",
-
     "rentContractNumber": "Rent Contract Number",
     "licenseNumber": "License Number",
     "taxRegistrationNumber": "Tax Registration Number",
@@ -32,52 +35,134 @@
     "postalCode": "Postal Code",
     "phone": "Phone",
     "fax": "Fax",
-
     "mobile": "Mobile Number",
     "email": "Email",
     "bankName": "Bank Name",
     "accountNumber": "Account Number",
     "fees": "Fees",
-    "selectBank": "Select Bank Name"
-
+    "selectBank": "Select Bank Name",
+    "srNumber": "SR Number",
+    "srType": "SR Type",
+    "srStatus": "SR Status",
+    "lastUpdateDate": "Last Update Date",
+    "customerName": "Customer Name"
   },
   "select": {
     "oneYear": "1 Year",
     "twoYears": "2 Years"
   },
   "buttons": {
+    "reset": "Reset",
     "next": "Next",
     "back": "Back",
     "submit": "Submit",
     "na": "N/A",
-    "proceedToPay": "Create Service Request"
-
-
+    "proceedToPay": "Create Service Request",
+    "validate": "Validate",
+    "validated": "Validated",
+    "receipt": "View Receipt",
+    "report": "View Report",
+    "payment": "Proceed To Pay",
+    "home": "Home",
+    "viewSR": "View SR",
+    "download": "Download",
+    "print": "Print",
+    "close": "Close",
+    "refresh": "Refresh",
+    "verify": "Verify"
   },
   "messages": {
-    "fetchFailed": "Failed to fetch company details!"
+    "fetchFailed": "Failed to fetch company details!",
+    "autoFilled": "Company details auto-filled from existing record",
+    "crNotFoundManual": "CR number does not exist. Please fill mandatory details manually.",
+    "paymentSuccess": "Payment Completed Successfully",
+    "transactionVerified": "Transaction Verified",
+    "transactionDetails": "Transaction Details",
+    "officialReceipt": "Official Receipt – Muscat Municipality",
+    "amount": "Amount",
+    "paid": "Paid",
+    "pending": "Pending",
+    "srExistsCompleted": "SR application already exists and is completed.",
+    "srExistsPending": "SR application already exists but payment is pending.",
+    "srCreatedPaymentRequired": "Service Request created successfully. Payment is required.",
+    "confirmationMessage": "You will receive a confirmation message within 10 minutes of registration (maximum)"
   },
   "step": {
     "companyDetails": "Company Details",
+    "otherDetails": "Other Details",
     "contractDetails": "Contract Details",
-    "paymentDetails": "Payment Details",
     "summary": "Summary",
-    "finish": "Finish",
+    "srDetails": "SR Details",
     "registrationProgress": "Registration Progress",
     "currentStep": "Current Step"
   },
   "common": {
     "yes": "Yes",
-    "no": "No"
+    "no": "No",
+    "loading": "Loading..."
   },
   "header": {
     "heading": "Muscat Municipality"
   },
   "footer": {
-    "copyright": "© 2025 Muscat Municipality. All rights reserved. Unauthorized use or reproduction is prohibited."
+    "copyright": "© 2026 Muscat Municipality. All rights reserved. Unauthorized use or reproduction is prohibited."
   },
   "validation": {
-    "fieldRequired": "This field is required",
-    "fillAllRequired": "Please fill all required fields before proceeding."
+    "fieldRequired": "This field is required.",
+    "fillAllRequired": "Please fill all required fields before proceeding.",
+    "correctHighlightedFields": "Please correct the highlighted fields before proceeding.",
+    "invalidEmail": "Invalid email format.",
+    "phone8Digits": "Must be exactly 8 digits.",
+    "account16Digits": "Account number must be exactly 16 digits.",
+    "numericOnly": "Only numbers are allowed.",
+    "max16Digits": "Maximum 16 digits allowed.",
+    "max5Digits": "Maximum 5 digits allowed.",
+    "pleaseValidateFirst": "Please enter valid CR Number, OCCI Number, and OCCI Expiry Date before proceeding.",
+    "invalidCrNumber": "Invalid Commercial Registration (CR) Number.",
+    "invalidOcciNumber": "Invalid OCCI Number.",
+    "invalidOcciExpiry": "OCCI Expiry Date is not valid or has expired.",
+    "apiError": "Unable to validate the CR and OCCI details at the moment. Please try again later.",
+    "validationSuccess": "CR and OCCI details have been successfully validated.",
+    "clickToValidate": "Click to validate details",
+    "validating": "Validating...",
+    "existingSRFound": "An active SR already exists for this CR. Click 'View SR' to see details."
+  },
+  "captcha": {
+    "title": "Security Verification",
+    "subtitle": "Please verify you're human to proceed",
+    "enterText": "Enter the text shown below",
+    "typeCharacters": "Type the characters you see:",
+    "refresh": "Refresh",
+    "verify": "Verify",
+    "verified": "Verified",
+    "placeholder": "Enter CAPTCHA",
+    "clickToRefresh": "Click to refresh",
+    "secureMessage": "Your information is protected with enterprise-grade security",
+    "success": "Verification Successful",
+    "error": "Invalid CAPTCHA. Please try again."
+  },
+  "loading": {
+    "title": "Validating & Creating SR...",
+    "creatingRequest": "Validating details",
+    "checkingSR": "Checking records",
+    "finalizing": "Finalizing request",
+    "processing": "Processing Request",
+    "pleaseWait": "Please wait..."
+  },
+  "announcement": {
+    "baladiyetiMessage": "** This service can be carried out through Baladiyeti Application **",
+    "confirmationMessage": "* You will receive a confirmation message within 10 minutes of registration (maximum)"
+  },
+  "crNotFound": "CR number does not exist. Please fill all mandatory details.",
+  "receipt": {
+    "srNumber": "SR Number",
+    "invoiceNumber": "Invoice Number",
+    "receiptNumber": "Receipt Number",
+    "receiptDate": "Receipt Date",
+    "serviceType": "Service Type",
+    "customerName": "Customer Name",
+    "crNumber": "CR Number",
+    "amount": "Amount",
+    "generated": "Generated"
   }
 }

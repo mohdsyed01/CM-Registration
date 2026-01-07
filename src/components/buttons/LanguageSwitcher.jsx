@@ -18,23 +18,24 @@ export default function LanguageSwitcher() {
       startIcon={<LanguageIcon />}
       sx={{
         textTransform: "none",
-        fontWeight: "600",
-        fontSize: "21px",          // ← increased text size
-        px: 3.5,
-        py: 1.5,
-        borderRadius: "10px",
-        backgroundColor: "#ffffffff",
+        fontWeight: 600,
+        fontSize: { xs: "10px", sm: "11px", md: "12px" },
+        px: { xs: 1.5, sm: 2, md: 2.5 },
+        py: { xs: 0.6, sm: 0.75, md: 0.9 },
+        borderRadius: "8px",
+        backgroundColor: "#ffffff",
         color: "#1d4a6d",
-        boxShadow: "0px 4px 12px rgba(255, 255, 255, 0.22)",
+        boxShadow: "0px 2px 8px rgba(255, 255, 255, 0.2)",
+        minWidth: "auto",
 
         "& .MuiSvgIcon-root": {
           color: "#1d4a6d",
-          fontSize: "29px",       // ← larger icon too (optional)
+          fontSize: { xs: "16px", sm: "18px", md: "20px" },
         },
 
         "&:hover": {
-          backgroundColor: "#ffffffff",
-          boxShadow: "0px 6px 18px rgba(250, 248, 248, 0.29)",
+          backgroundColor: "#f5f5f5",
+          boxShadow: "0px 4px 12px rgba(250, 248, 248, 0.25)",
         }
       }}
     >

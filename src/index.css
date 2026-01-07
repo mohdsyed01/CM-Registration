@@ -1,3 +1,9 @@
+
+
+body {
+  overflow-x: hidden !important;
+}
+
 /* RTL Support */
 [dir="rtl"] {
   direction: rtl;

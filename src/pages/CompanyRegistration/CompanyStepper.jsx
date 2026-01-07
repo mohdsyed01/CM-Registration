@@ -3,13 +3,13 @@ import { Stepper, Step, StepLabel, Box } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 import Step1_CompanyDetails from "./Step1_CompanyDetails";
-import Step2_OtherDetails from "./Step2_OtherDetails";
+import Step2_OtherDetails from "./Step2_ContractDetails";
 import Step3_PaymentDetails from "./Step3_PaymentDetails";
 import Step4_Summary from "./Step4_Summary";
 
 export default function CompanyStepper() {
   const { t, i18n } = useTranslation();
-  const isRTL = i18n.language === 'ar' || i18n.dir() === 'rtl';
+  const isRTL = i18n.language === "ar" || i18n.dir() === "rtl";
 
   const steps = useMemo(
     () => [
@@ -46,31 +46,11 @@ export default function CompanyStepper() {
   const renderStep = () => {
     switch (activeStep) {
       case 0:
-        return (
-          <Step1_CompanyDetails
-            formData={formData}
-            setFormData={setFormData}
-            next={next}
-          />
-        );
+        return <Step1_CompanyDetails formData={formData} setFormData={setFormData} next={next} />;
       case 1:
-        return (
-          <Step2_OtherDetails
-            formData={formData}
-            setFormData={setFormData}
-            next={next}
-            back={back}
-          />
-        );
+        return <Step2_OtherDetails formData={formData} setFormData={setFormData} next={next} back={back} />;
       case 2:
-        return (
-          <Step3_PaymentDetails
-            formData={formData}
-            setFormData={setFormData}
-            next={next}
-            back={back}
-          />
-        );
+        return <Step3_PaymentDetails formData={formData} setFormData={setFormData} next={next} back={back} />;
       case 3:
         return <Step4_Summary formData={formData} back={back} />;
       default:
@@ -79,46 +59,56 @@ export default function CompanyStepper() {
   };
 
   return (
-    <Box 
-      sx={{ 
-        width: "90%", 
-        mx: "auto",
-        direction: isRTL ? 'rtl' : 'ltr'
-      }}
-    >
-      <Stepper
-        activeStep={activeStep}
-        alternativeLabel
-        sx={{
-          "& .MuiStepIcon-root.Mui-active": {
-            color: "rgba(130, 121, 207, 1)",
-          },
-          "& .MuiStepIcon-root.Mui-completed": {
-            color: "rgba(130, 121, 207, 0.6)",
-          },
-          "& .MuiStepLabel-label.Mui-active": {
-            color: "rgba(130, 121, 207, 1)",
-            fontWeight: "bold",
-          },
-          "& .MuiStepLabel-label.Mui-completed": {
-            color: "rgba(130, 121, 207, 0.7)",
-            fontWeight: "bold",
-          },
-          "& .MuiStepConnector-line": {
-            borderColor: "rgba(130, 121, 207, 0.4)",
-          },
-        }}
-      >
-        {steps.map((label, idx) => (
-          <Step key={idx}>
-            <StepLabel sx={{ textTransform: "capitalize" }}>
-              {label}
-            </StepLabel>
-          </Step>
-        ))}
-      </Stepper>
+    <>
+      {/* Stepper at the top */}
+      <Box sx={{ 
+        width: "100%",
+        direction: isRTL ? "rtl" : "ltr",
+        mb: 4,
+        position: "absolute",
+        top: "-120px",
+        left: 0,
+        right: 0,
+        px: 4,
+        py: 0.5,           // ↓ reduce height of white card
+        minHeight: "60px", // ↓ make card compact
+      }}>
+        <Stepper
+          activeStep={activeStep}
+          alternativeLabel
+          sx={{
+            "& .MuiStepIcon-root": { color: "#cfe4e4" },
+            "& .MuiStepIcon-root.Mui-active": { color: "#5f8080ff" },
+            "& .MuiStepIcon-root.Mui-completed": { color: "#5f8080aa" },
+            "& .MuiStepLabel-label": {
+              fontSize: "16px",
+              fontWeight: 500,
+              color: "#444",
+            },
+            "& .MuiStepLabel-label.Mui-active": {
+              color: "#5f8080ff",
+              fontWeight: 700,
+            },
+            "& .MuiStepLabel-label.Mui-completed": {
+              color: "#5f8080aa",
+              fontWeight: 600,
+            },
+            "& .MuiStepConnector-line": {
+              borderColor: "#5f808033",
+              borderWidth: "2px",
+            },
+          }}
+        >
+          {steps.map((label, idx) => (
+            <Step key={idx}>
+              <StepLabel>{label}</StepLabel>
+            </Step>
+          ))}
+        </Stepper>
+      </Box>
 
-      <Box sx={{ mt: 4 }}>{renderStep()}</Box>
-    </Box>
+      {/* Form content */}
+      {renderStep()}
+    </>
   );
 }

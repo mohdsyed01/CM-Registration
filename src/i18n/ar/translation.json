@@ -1,11 +1,16 @@
 {
   "page": {
-    "companyRegistration": "تسجيل الشركة"
+    "companyRegistration": "تسجيل الشركة",
+    "contractDetails": "تفاصيل العقد",
+    "paymentDetails": "تفاصيل الدفع"
   },
   "section": {
     "companyDetails": "تفاصيل الشركة",
     "occiDetails": "تفاصيل غرفة التجارة",
-    "smeRiyadaDetails": "تفاصيل المؤسسات الصغيرة وريادة"
+    "smeRiyadaDetails": "تفاصيل المؤسسات الصغيرة وريادة",
+    "contractInformation": "معلومات العقد",
+    "contactInformation": "معلومات الاتصال",
+    "paymentInformation": "معلومات الدفع"
   },
   "fields": {
     "companyName": "اسم الشركة",
@@ -17,7 +22,24 @@
     "isSme": "هل الشركة من المؤسسات الصغيرة؟",
     "smeType": "نوع المؤسسة الصغيرة",
     "isRiyadaRegistered": "هل الشركة مسجلة في ريادة؟",
-    "riydaCardExpiry": "تاريخ انتهاء بطاقة ريادة"
+    "riydaCardExpiry": "تاريخ انتهاء بطاقة ريادة",
+
+    "rentContractNumber": "رقم عقد الإيجار",
+    "licenseNumber": "رقم الترخيص",
+    "taxRegistrationNumber": "رقم التسجيل الضريبي",
+    "beneficiaryNumber": "رقم المستفيد من وزارة المالية",
+    "poBox": "صندوق البريد",
+    "postalCode": "الرمز البريدي",
+    "phone": "الهاتف",
+    "fax": "الفاكس",
+
+    "mobile": "رقم الهاتف المحمول",
+    "email": "البريد الإلكتروني",
+    "bankName": "اسم البنك",
+    "accountNumber": "رقم الحساب",
+    "fees": "الرسوم",
+    "selectBank": "اختر اسم البنك"
+
   },
   "select": {
     "oneYear": "سنة واحدة",
@@ -26,19 +48,37 @@
   "buttons": {
     "next": "التالي",
     "back": "السابق",
-    "submit": "إرسال"
+    "submit": "إرسال",
+    "na": "غير متوفر",
+    "proceedToPay": "إنشاء طلب خدمة"
+
+
+
   },
   "messages": {
     "fetchFailed": "فشل في جلب بيانات الشركة!"
   },
   "step": {
     "companyDetails": "تفاصيل الشركة",
-    "otherDetails": "تفاصيل أخرى",
+    "contractDetails": "تفاصيل العقد",
     "paymentDetails": "تفاصيل الدفع",
-    "summary": "الملخص"
+    "summary": "الملخص",
+    "finish": "إنهاء",
+    "registrationProgress": "تقدم التسجيل",
+    "currentStep": "الخطوة الحالية"
   },
   "common": {
     "yes": "نعم",
     "no": "لا"
+  },
+  "header": {
+    "heading": "بلدية مســــقط"
+  },
+  "footer": {
+    "copyright": "© ٢٠٢٥ بلدية مسقط. جميع الحقوق محفوظة. يحظر الاستخدام أو النسخ غير المصرح به."
+  },
+  "validation": {
+    "fieldRequired": "هذا الحقل مطلوب",
+    "fillAllRequired": "يرجى ملء جميع الحقول المطلوبة قبل المتابعة."
   }
 }

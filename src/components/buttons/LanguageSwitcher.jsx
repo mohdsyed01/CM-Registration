@@ -13,21 +13,29 @@ export default function LanguageSwitcher() {
 
   return (
     <Button
-      variant="outlined"
+      variant="contained"
       onClick={toggleLang}
       startIcon={<LanguageIcon />}
-      sx={{ 
-        textTransform: "none", 
-        fontWeight: "bold",
-        borderColor: "#8279CF",
-        color: "#8279CF",
-        px: 3,
-        py: 1,
-        borderRadius: "20px",
-        "&:hover": {
-          borderColor: "#6f66b8",
-          backgroundColor: "rgba(130, 121, 207, 0.08)",
+      sx={{
+        textTransform: "none",
+        fontWeight: "600",
+        fontSize: "21px",          // ← increased text size
+        px: 3.5,
+        py: 1.5,
+        borderRadius: "10px",
+        backgroundColor: "#ffffffff",
+        color: "#1d4a6d",
+        boxShadow: "0px 4px 12px rgba(255, 255, 255, 0.22)",
+
+        "& .MuiSvgIcon-root": {
+          color: "#1d4a6d",
+          fontSize: "29px",       // ← larger icon too (optional)
         },
+
+        "&:hover": {
+          backgroundColor: "#ffffffff",
+          boxShadow: "0px 6px 18px rgba(250, 248, 248, 0.29)",
+        }
       }}
     >
       {i18n.language === "ar" ? "English" : "عربي"}

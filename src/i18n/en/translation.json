@@ -1,11 +1,16 @@
 {
   "page": {
-    "companyRegistration": "Company Registration"
+    "companyRegistration": "Company Registration",
+    "contractDetails": "Contract Details",
+    "paymentDetails": "Payment Details"
   },
   "section": {
     "companyDetails": "Company Details",
     "occiDetails": "OCCI Details",
-    "smeRiyadaDetails": "SME & Riyada Details"
+    "smeRiyadaDetails": "SME & Riyada Details",
+    "contractInformation": "Contract Information",
+    "contactInformation": "Contact Information",
+    "paymentInformation": "Payment Information"
   },
   "fields": {
     "companyName": "Company Name",
@@ -17,7 +22,24 @@
     "isSme": "Is SME Company?",
     "smeType": "SME Type",
     "isRiyadaRegistered": "Is Riyada Registered?",
-    "riydaCardExpiry": "Riyada Card Expiry"
+    "riydaCardExpiry": "Riyada Card Expiry",
+
+    "rentContractNumber": "Rent Contract Number",
+    "licenseNumber": "License Number",
+    "taxRegistrationNumber": "Tax Registration Number",
+    "beneficiaryNumber": "Beneficiary Number of the Ministry of Finance",
+    "poBox": "P.O. Box",
+    "postalCode": "Postal Code",
+    "phone": "Phone",
+    "fax": "Fax",
+
+    "mobile": "Mobile Number",
+    "email": "Email",
+    "bankName": "Bank Name",
+    "accountNumber": "Account Number",
+    "fees": "Fees",
+    "selectBank": "Select Bank Name"
+
   },
   "select": {
     "oneYear": "1 Year",
@@ -26,19 +48,36 @@
   "buttons": {
     "next": "Next",
     "back": "Back",
-    "submit": "Submit"
+    "submit": "Submit",
+    "na": "N/A",
+    "proceedToPay": "Create Service Request"
+
+
   },
   "messages": {
     "fetchFailed": "Failed to fetch company details!"
   },
   "step": {
     "companyDetails": "Company Details",
-    "otherDetails": "Other Details",
+    "contractDetails": "Contract Details",
     "paymentDetails": "Payment Details",
-    "summary": "Summary"
+    "summary": "Summary",
+    "finish": "Finish",
+    "registrationProgress": "Registration Progress",
+    "currentStep": "Current Step"
   },
   "common": {
     "yes": "Yes",
     "no": "No"
+  },
+  "header": {
+    "heading": "Muscat Municipality"
+  },
+  "footer": {
+    "copyright": "© 2025 Muscat Municipality. All rights reserved. Unauthorized use or reproduction is prohibited."
+  },
+  "validation": {
+    "fieldRequired": "This field is required",
+    "fillAllRequired": "Please fill all required fields before proceeding."
   }
 }

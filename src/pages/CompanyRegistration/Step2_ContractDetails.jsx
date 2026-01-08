@@ -543,7 +543,7 @@ export default function Step2_ContractDetails({
 
                                     error={errors.rentContractNumber}
                                     helperText={errors.rentContractNumber ? t("validation.fieldRequired") : ""}
-                                    InputLabelProps={{ shrink: false }}
+                                    InputLabelProps={{ shrink: true }}
                                     sx={fieldSx}
                                 />
                             </Box>
@@ -567,7 +567,7 @@ export default function Step2_ContractDetails({
 
                                     error={errors.licenseNumber}
                                     helperText={errors.licenseNumber ? t("validation.fieldRequired") : ""}
-                                    InputLabelProps={{ shrink: false }}
+                                    InputLabelProps={{ shrink: true }}
                                     sx={fieldSx}
                                 />
                             </Box>
@@ -591,7 +591,7 @@ export default function Step2_ContractDetails({
 
                                     error={errors.taxRegistrationNumber}
                                     helperText={errors.taxRegistrationNumber ? t("validation.fieldRequired") : ""}
-                                    InputLabelProps={{ shrink: false }}
+                                    InputLabelProps={{ shrink: true }}
                                     sx={fieldSx}
                                 />
                             </Box>
@@ -615,7 +615,7 @@ export default function Step2_ContractDetails({
 
                                     error={errors.beneficiaryNumber}
                                     helperText={errors.beneficiaryNumber ? t("validation.fieldRequired") : ""}
-                                    InputLabelProps={{ shrink: false }}
+                                    InputLabelProps={{ shrink: true }}
                                     sx={fieldSx}
                                 />
                             </Box>
@@ -650,7 +650,7 @@ export default function Step2_ContractDetails({
 
                                     error={errors.poBox}
                                     helperText={errors.poBox ? t("validation.fieldRequired") : ""}
-                                    InputLabelProps={{ shrink: false }}
+                                    InputLabelProps={{ shrink: true }}
                                     sx={fieldSx}
                                 />
                             </Box>
@@ -674,7 +674,7 @@ export default function Step2_ContractDetails({
 
                                     error={errors.postalCode}
                                     helperText={errors.postalCode ? t("validation.fieldRequired") : ""}
-                                    InputLabelProps={{ shrink: false }}
+                                    InputLabelProps={{ shrink: true }}
                                     sx={fieldSx}
                                 />
                             </Box>
@@ -698,7 +698,7 @@ export default function Step2_ContractDetails({
 
                                     error={errors.phone}
                                     helperText={errors.phone ? t("validation.fieldRequired") : ""}
-                                    InputLabelProps={{ shrink: false }}
+                                    InputLabelProps={{ shrink: true }}
                                     sx={fieldSx}
                                 />
                             </Box>
@@ -722,7 +722,7 @@ export default function Step2_ContractDetails({
 
                                     error={errors.fax}
                                     helperText={errors.fax ? t("validation.fieldRequired") : ""}
-                                    InputLabelProps={{ shrink: false }}
+                                    InputLabelProps={{ shrink: true }}
                                     sx={fieldSx}
                                 />
                             </Box>
@@ -746,7 +746,7 @@ export default function Step2_ContractDetails({
 
                                     error={errors.mobile}
                                     helperText={errors.mobile ? t("validation.fieldRequired") : ""}
-                                    InputLabelProps={{ shrink: false }}
+                                    InputLabelProps={{ shrink: true }}
                                     sx={fieldSx}
                                 />
                             </Box>
@@ -771,7 +771,7 @@ export default function Step2_ContractDetails({
                                     helperText={errors.email || ""}
 
 
-                                    InputLabelProps={{ shrink: false }}
+                                    InputLabelProps={{ shrink: true }}
                                     sx={fieldSx}
                                 />
                             </Box>
@@ -842,7 +842,7 @@ export default function Step2_ContractDetails({
                                     }}
                                     error={Boolean(errors.bankCode)}
                                     helperText={errors.bankCode ? t("validation.fieldRequired") : ""}
-                                    InputLabelProps={{ shrink: false }}
+                                    InputLabelProps={{ shrink: true }}
                                     sx={selectFieldSx}
                                     SelectProps={{ MenuProps: selectMenuProps }}
                                     disabled={bankListLoading}
@@ -879,7 +879,7 @@ export default function Step2_ContractDetails({
 
                                     error={Boolean(errors.accountNumber)}
                                     helperText={errors.accountNumber || ""}
-                                    InputLabelProps={{ shrink: false }}
+                                    InputLabelProps={{ shrink: true }}
                                     sx={fieldSx}
                                 />
 
@@ -894,7 +894,7 @@ export default function Step2_ContractDetails({
                                     disabled
                                     label={t("fields.fees")}
                                     value={formData.fees || ""}
-                                    InputLabelProps={{ shrink: false }}
+                                    InputLabelProps={{ shrink: true }}
                                     sx={fieldSx}
                                 />
 

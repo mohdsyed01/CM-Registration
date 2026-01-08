@@ -399,22 +399,22 @@ export default function Step4_Summary({ formData, next, back, setSrDetails }) {
           <AccordionDetails sx={{ pt: 0, pb: 1, px: 1.5 }}>
             <Box sx={{ display: "flex", gap: 2.5, flexWrap: "wrap" }}>
               <Box sx={{ flex: "1 1 280px", minWidth: "200px" }}>
-                <TextField fullWidth disabled label={t("fields.companyName", "Company Name")} value={show(formData.companyName)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.companyName", "Company Name")} value={show(formData.companyName)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 120px" }}>
-                <TextField fullWidth disabled label={t("fields.crNumber", "CR Number")} value={show(formData.crNumber)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.crNumber", "CR Number")} value={show(formData.crNumber)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 130px" }}>
-                <TextField fullWidth disabled label={t("fields.occiNumber", "OCCI Number")} value={show(formData.occiNumber)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.occiNumber", "OCCI Number")} value={show(formData.occiNumber)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 140px" }}>
-                <TextField fullWidth disabled label={t("fields.occiExpiryDate", "OCCI Expiry")} value={formData.occiExpiry ? formData.occiExpiry.format("YYYY-MM-DD") : "—"} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.occiExpiryDate", "OCCI Expiry")} value={formData.occiExpiry ? formData.occiExpiry.format("YYYY-MM-DD") : "—"} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 120px" }}>
-                <TextField fullWidth disabled label={t("fields.yearsToRenew", "Years To Renew")} value={show(formData.yearsToRenew)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.yearsToRenew", "Years To Renew")} value={show(formData.yearsToRenew)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 100px" }}>
-                <TextField fullWidth disabled label={t("fields.degree", "Degree")} value={show(formData.degree)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.degree", "Degree")} value={show(formData.degree)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
             </Box>
           </AccordionDetails>
@@ -429,16 +429,16 @@ export default function Step4_Summary({ formData, next, back, setSrDetails }) {
           <AccordionDetails sx={{ pt: 0, pb: 1, px: 1.5 }}>
             <Box sx={{ display: "flex", gap: 2.5, flexWrap: "wrap" }}>
               <Box sx={{ flex: "0 0 120px" }}>
-                <TextField fullWidth disabled label={t("fields.isSme", "Is SME?")} value={yesNo(formData.isSme)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.isSme", "Is SME?")} value={yesNo(formData.isSme)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 140px" }}>
-                <TextField fullWidth disabled label={t("fields.smeType", "SME Type")} value={show(formData.smeType)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.smeType", "SME Type")} value={show(formData.smeType)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 160px" }}>
-                <TextField fullWidth disabled label={t("fields.isRiyadaRegistered", "Riyada Registered?")} value={yesNo(formData.isRiyadaRegistered)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.isRiyadaRegistered", "Riyada Registered?")} value={yesNo(formData.isRiyadaRegistered)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 140px" }}>
-                <TextField fullWidth disabled label={t("fields.riydaCardExpiry", "Riyada Expiry")} value={formData.riydaExpiry ? formData.riydaExpiry.format("YYYY-MM-DD") : "—"} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.riydaCardExpiry", "Riyada Expiry")} value={formData.riydaExpiry ? formData.riydaExpiry.format("YYYY-MM-DD") : "—"} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
             </Box>
           </AccordionDetails>
@@ -453,34 +453,34 @@ export default function Step4_Summary({ formData, next, back, setSrDetails }) {
           <AccordionDetails sx={{ pt: 0, pb: 1, px: 1.5 }}>
             <Box sx={{ display: "flex", gap: 2.5, flexWrap: "wrap" }}>
               <Box sx={{ flex: "0 0 160px" }}>
-                <TextField fullWidth disabled label={t("fields.rentContractNumber", "Rent Contract Number")} value={show(formData.rentContractNumber)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.rentContractNumber", "Rent Contract Number")} value={show(formData.rentContractNumber)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 130px" }}>
-                <TextField fullWidth disabled label={t("fields.licenseNumber", "License Number")} value={show(formData.licenseNumber)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.licenseNumber", "License Number")} value={show(formData.licenseNumber)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 160px" }}>
-                <TextField fullWidth disabled label={t("fields.taxRegistrationNumber", "Tax Registration")} value={show(formData.taxRegistrationNumber)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.taxRegistrationNumber", "Tax Registration")} value={show(formData.taxRegistrationNumber)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "1 1 200px" }}>
-                <TextField fullWidth disabled label={t("fields.beneficiaryNumber", "Beneficiary Number")} value={show(formData.beneficiaryNumber)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.beneficiaryNumber", "Beneficiary Number")} value={show(formData.beneficiaryNumber)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 90px" }}>
-                <TextField fullWidth disabled label={t("fields.poBox", "P.O. Box")} value={show(formData.poBox)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.poBox", "P.O. Box")} value={show(formData.poBox)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 110px" }}>
-                <TextField fullWidth disabled label={t("fields.postalCode", "Postal Code")} value={show(formData.postalCode)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.postalCode", "Postal Code")} value={show(formData.postalCode)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 120px" }}>
-                <TextField fullWidth disabled label={t("fields.phone", "Phone")} value={show(formData.phone)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.phone", "Phone")} value={show(formData.phone)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 100px" }}>
-                <TextField fullWidth disabled label={t("fields.fax", "Fax")} value={show(formData.fax)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.fax", "Fax")} value={show(formData.fax)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 120px" }}>
-                <TextField fullWidth disabled label={t("fields.mobile", "Mobile")} value={show(formData.mobile)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.mobile", "Mobile")} value={show(formData.mobile)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "1 1 200px" }}>
-                <TextField fullWidth disabled label={t("fields.email", "Email")} value={show(formData.email)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.email", "Email")} value={show(formData.email)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
             </Box>
           </AccordionDetails>
@@ -495,13 +495,13 @@ export default function Step4_Summary({ formData, next, back, setSrDetails }) {
           <AccordionDetails sx={{ pt: 0, pb: 1, px: 1.5 }}>
             <Box sx={{ display: "flex", gap: 2.5, flexWrap: "wrap" }}>
               <Box sx={{ flex: "0 0 200px" }}>
-                <TextField fullWidth disabled label={t("fields.bankName", "Bank Name")} value={show(displayBankName)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.bankName", "Bank Name")} value={show(displayBankName)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 160px" }}>
-                <TextField fullWidth disabled label={t("fields.accountNumber", "Account Number")} value={show(formData.accountNumber)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.accountNumber", "Account Number")} value={show(formData.accountNumber)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
               <Box sx={{ flex: "0 0 80px" }}>
-                <TextField fullWidth disabled label={t("fields.fees", "Fees")} value={show(formData.fees)} InputLabelProps={{ shrink: false }} sx={fieldSx} />
+                <TextField fullWidth disabled label={t("fields.fees", "Fees")} value={show(formData.fees)} InputLabelProps={{ shrink: true }} sx={fieldSx} />
               </Box>
             </Box>
           </AccordionDetails>
